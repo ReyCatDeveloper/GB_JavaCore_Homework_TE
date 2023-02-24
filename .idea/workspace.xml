@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6c4837-847d-4cec-a407-616a7a5b9c34" name="Changes" comment="git">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2/MyArrayDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson2/MyArraySizeExсeption.java" afterDir="false" />
+    <list default="true" id="1c6c4837-847d-4cec-a407-616a7a5b9c34" name="Changes" comment="lesson2">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task1/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task2/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task2/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task2/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/task2/Orange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.lesson2.Main">
+  <component name="RunManager" selected="Application.lesson3.task2.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson1.Main" />
       <module name="JavaCoreForTesters_Homework" />
@@ -84,8 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lesson3.task2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson3.task2.Main" />
+      <module name="JavaCoreForTesters_Homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson3.task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson3.task2.Main" />
         <item itemvalue="Application.lesson2.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -100,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1676838148908</updated>
     </task>
+    <task id="LOCAL-00001" summary="lesson2">
+      <created>1677236548732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677236548732</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,5 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2" />
   </component>
 </project>
