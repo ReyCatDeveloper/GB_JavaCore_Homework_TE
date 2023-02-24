@@ -19,7 +19,7 @@ public class Main {
         //ПОЛОСА ПРЕПЯТСТВИЙ
         Course wayOfWarrior = new Course("The Way of Warrior", new Barrier[]{groundBarrier, waterBarrier });
 
-        //КОМАНДА ПРОХОДИТ ЧЕРЕЗ ПОЛОСУ ПРЕПЯТСТВИЙ //TODO чуть переделать финалистов
+        //КОМАНДА ПРОХОДИТ ЧЕРЕЗ ПОЛОСУ ПРЕПЯТСТВИЙ //TODO чуть переделать финалистов. финалисты в самой полосе препятствий
         int[] theFinalists = wayOfWarrior.tryTheBarrier(warriors);
 
         //ПОКАЗАТЬ ИНФОРМАЦИЮ о ПОБЕДИТЕЛЯХ
