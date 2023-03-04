@@ -1,5 +1,6 @@
 package lesson6_7;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lesson6_7.accuWeatherJsonClasses.BodyResponse;
 import lesson6_7.accuWeatherJsonClasses.Response;
@@ -9,7 +10,7 @@ import okhttp3.Request;
 import java.io.IOException;
 
 import static lesson6_7.Interface.continueAsk;
-import static lesson6_7.WeatherRequest.buildUrl;
+import static lesson6_7.WeatherRequest.buildUserRequest;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -17,7 +18,7 @@ public class Main {
         OkHttpClient client = new OkHttpClient();
 
         while (true) {
-            String requestURL = buildUrl();
+            String requestURL = buildUserRequest();
 
             Request request = new Request.Builder()
                     //.url("http://dataservice.accuweather.com/forecasts/v1/daily/5day/222844?apikey=pp0fIcvt4V9GTyAqCEG1O6cJCX71LYcZ")
@@ -91,4 +92,35 @@ public class Main {
 //       WeatherResponse thisResponse = new WeatherResponse(tjs);
 //        thisResponse.showForecast();
     }
+
+    public static void executeForecastProgram() throws IOException {
+        System.out.println("|| ПОЛУЧИТЬ СВОДКУ ПОГОДЫ ||");
+        OkHttpClient client = new OkHttpClient();
+
+        while (true) {
+            String requestURL = buildUserRequest();
+
+            Request request = new Request.Builder()
+                    //.url("http://dataservice.accuweather.com/forecasts/v1/daily/5day/222844?apikey=pp0fIcvt4V9GTyAqCEG1O6cJCX71LYcZ")
+                    //        .url("http://dataservice.accuweather.com/forecasts/v1/daily/5day/222844?apikey=pp0fIcvt4V9GTyAqCEG1O6cJCX71LYcZ&language=ru-ru&details=true")
+                    .url(requestURL)
+                    .build();
+
+
+            // //      Call call = client.newCall(request);
+            // //      Response response = call.execute();
+            ObjectMapper mapper = new ObjectMapper();
+
+            String jsonResponse = client.newCall(request).execute().body().string();
+            //(диагностика) вывод     jsonResponse
+            //    System.out.println("jsonResponse: \n"+jsonResponse);
+            Response responseJava = mapper.readValue(jsonResponse, Response.class);
+
+            responseJava.showDailyForecasts();
+
+            continueAsk();
+        }
+    }
+
+
 }

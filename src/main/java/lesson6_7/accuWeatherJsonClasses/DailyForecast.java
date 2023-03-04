@@ -11,7 +11,7 @@ public class DailyForecast {
     private String date;
     private AccuDate parsingDate;
     private Temperature temperature;
-    String forecastCity = getCurrentRequestCity();
+    private String forecastCity;// = getCurrentRequestCity();
     private DayWeather dayWeather;
     private NightWeather nightWeather;
 
@@ -23,6 +23,8 @@ public class DailyForecast {
         this.parsingDate = new AccuDate(this.date);
         this.dayWeather = dayWeather;
         this.nightWeather = nightWeather;
+        this.forecastCity = getCurrentRequestCity();
+
     }
 @JsonGetter("Temperature")
     public Temperature getTemperature() {
@@ -59,6 +61,14 @@ public class DailyForecast {
 @JsonSetter("Night")
     public void setNightWeather(NightWeather nightWeather) {
         this.nightWeather = nightWeather;
+    }
+
+    public String getForecastCity() {
+        return forecastCity;
+    }
+
+    public double getMaxTemperature(){
+        return Double.parseDouble(temperature.getMaximum().getCelsius());
     }
 
     @Override

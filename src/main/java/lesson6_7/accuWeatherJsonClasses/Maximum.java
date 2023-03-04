@@ -27,4 +27,8 @@ public class Maximum {
     public String toString() {
         return ("до: " + celsius +"C");
     }
+
+    public String getCelsius(){
+        return String.valueOf(celsius);
+    };
 }

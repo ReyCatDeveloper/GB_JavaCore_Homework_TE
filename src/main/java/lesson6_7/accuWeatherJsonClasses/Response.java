@@ -51,4 +51,8 @@ public class Response {
         }
         System.out.println();
     }
+
+    public DailyForecast[] getDeserializedDailyForecasts(){
+        return deserializedDailyForecasts;
+    }
 }

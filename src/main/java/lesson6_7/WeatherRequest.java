@@ -22,48 +22,54 @@ public class WeatherRequest {
 
     }
 
-    public static String buildUrl(){
-        userAsk();
-        int cityNumber = Interface.getUserSelect();
+    public static String buildUserRequest(){
 
-        switch (cityNumber){
-            case  (1):
+        String cityNumber = Interface.getUserSelect();
+
+        switch (cityNumber.intern()){
+            case  ("1"):
                 System.out.println("Москва");
                 WeatherRequest requestMoscow = new WeatherRequest("294021");
                 requestMoscow.cityName = "Москва";
                 currentRequest = requestMoscow;
                 break;
-            case (2):
+            case ("2"):
                 System.out.println("Санкт-Петербург");
                 WeatherRequest requestSaintPetersburg = new WeatherRequest("295212");
                 requestSaintPetersburg.cityName = "Санкт-Петербург";
                 currentRequest = requestSaintPetersburg;
                 break;
-            case (3):
+            case ("3"):
                 System.out.println("Ташкент");
                 WeatherRequest requestTashkent = new WeatherRequest("351199");
                 requestTashkent.cityName = "Ташкент";
                 currentRequest = requestTashkent;
                 break;
-            case  (4):
+            case ("4"):
                 System.out.println("Баку");
                 WeatherRequest requestBaku = new WeatherRequest("27103");
                 requestBaku.cityName = "Баку";
                 currentRequest = requestBaku;
                 break;
-            case (5):
+            case ("5"):
                 System.out.println("Минск");
                 WeatherRequest requestMinsk = new WeatherRequest("28580");
                 requestMinsk.cityName = "Минск";
                 currentRequest = requestMinsk;
                 break;
-            case (6):
+            case ("0"):
+                System.out.println("ПРОСМОТР ДАННЫХ ЖУРНАЛА:");
+                Interface.setUserSelect("0");
+                break;
+            case ("exit"):
                 System.out.println("ВЫХОД");
                 System.exit(0);
                 break;
         }
+
         assert currentRequest != null;
         return currentRequest.fullURL;
+
     }
 
 

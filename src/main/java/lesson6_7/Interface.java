@@ -3,19 +3,26 @@ package lesson6_7;
 import java.util.Scanner;
 
 public class Interface {
-    private static final Scanner in = new Scanner(System.in);
-    private static int userSelect;
+    private static Scanner in = new Scanner(System.in);
+    private static String userSelect;
     public static void userAsk() {
-
+        in = new Scanner(System.in);
         int cityNumber;
+        String cityNumberString;
 
         do {
             System.out.println("Выберите цифру города:");
-            System.out.println("1 - Москва | 2 - Санкт-Петербург | 3 - Ташкент | 4 - Баку | 5 - Минск | 6 - ВЫХОД |");
-            cityNumber = in.nextInt();
-        } while (cityNumber <= 0 || cityNumber > 7);
+            System.out.println("1 - Москва | 2 - Санкт-Петербург | 3 - Ташкент | 4 - Баку | 5 - Минск | 0 - ЖУРНАЛ | exit - ВЫХОД |");
+            cityNumberString = in.nextLine();
+            try{
+                cityNumber = Integer.parseInt(cityNumberString);
+            }catch (NumberFormatException e){
+                cityNumber = -1;
+            }
 
-        userSelect = cityNumber;
+        } while ((cityNumberString.intern() != ("exit") == true) && (cityNumber < 0 || cityNumber > 6) == true);
+
+        userSelect = cityNumberString;
     }
 
     public static void continueAsk(){
@@ -31,11 +38,11 @@ public class Interface {
         }
     }
 
-    public static int getUserSelect() {
+    public static String getUserSelect() {
         return userSelect;
     }
 
-    public static void setUserSelect(int userSelect) {
+    public static void setUserSelect(String userSelect) {
         Interface.userSelect = userSelect;
     }
 
