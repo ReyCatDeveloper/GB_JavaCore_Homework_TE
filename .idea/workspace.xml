@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6c4837-847d-4cec-a407-616a7a5b9c34" name="Changes" comment="lesson6_7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Homework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/StartRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/presentation/Main.java" afterDir="false" />
+    <list default="true" id="1c6c4837-847d-4cec-a407-616a7a5b9c34" name="Changes" comment="lesson8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/GeekCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/GeekStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson6_7/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson6_7/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson6_7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson6_7/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson6_7/WeatherRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson6_7/WeatherRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson6_7/accuWeatherJsonClasses/DailyForecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson6_7/accuWeatherJsonClasses/DailyForecast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson6_7/accuWeatherJsonClasses/Maximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson6_7/accuWeatherJsonClasses/Maximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson6_7/accuWeatherJsonClasses/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson6_7/accuWeatherJsonClasses/Response.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,41 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.StartRequest">
+}</component>
+  <component name="RunManager" selected="Application.lesson9.Main">
     <configuration name="Homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson8.Homework" />
       <module name="JavaCoreForTesters_Homework" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lesson8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Interface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson6_7.Interface" />
-      <module name="JavaCoreForTesters_Homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson6_7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,13 +119,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lesson9.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson9.Main" />
+      <module name="JavaCoreForTesters_Homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson9.Main" />
         <item itemvalue="Application.StartRequest" />
         <item itemvalue="Application.Homework" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.lesson6_7.Main" />
-        <item itemvalue="Application.Interface" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677539296050</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson8">
+      <created>1677925465140</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677925465140</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +217,8 @@
     <MESSAGE value="lesson3" />
     <MESSAGE value="lesson5" />
     <MESSAGE value="lesson6_7" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6_7" />
+    <MESSAGE value="lesson8" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
